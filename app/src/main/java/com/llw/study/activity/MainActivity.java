@@ -26,6 +26,8 @@ public class MainActivity extends StudyActivity<ActivityMainBinding> {
         binding.btnSmartRefreshUsed.setOnClickListener(v -> jumpActivity(SmartRefreshActivity.class));
         //进入百度定位地图使用页面
         binding.btnBaiduLocationMapUsed.setOnClickListener(v -> jumpActivity(BaiduMapActivity.class));
+        //华为扫码服务使用页面
+        binding.btnHuaweiScanUsed.setOnClickListener(v -> jumpActivity(HuaweiScanActivity.class));
     }
 
     private long timeMillis;

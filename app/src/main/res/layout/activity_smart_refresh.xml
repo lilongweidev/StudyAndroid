@@ -38,13 +38,18 @@
             android:layout_height="match_parent"
             android:overScrollMode="never">
 
-            <TextView
-                android:textColor="@color/black"
-                android:textSize="24sp"
-                android:gravity="center"
+            <LinearLayout
+                android:layout_gravity="center"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="上下滑动页面" />
+                android:layout_height="match_parent">
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="24sp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="上下滑动页面" />
+            </LinearLayout>
         </androidx.core.widget.NestedScrollView>
 
         <com.scwang.smart.refresh.footer.ClassicsFooter
