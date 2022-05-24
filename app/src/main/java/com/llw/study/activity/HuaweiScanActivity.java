@@ -2,22 +2,23 @@ package com.llw.study.activity;
 
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
-import androidx.appcompat.app.AppCompatActivity;
 
 import android.Manifest;
 import android.content.Intent;
-import android.os.Bundle;
 
 import com.huawei.hms.hmsscankit.ScanUtil;
 import com.huawei.hms.ml.scan.HmsScan;
 import com.huawei.hms.ml.scan.HmsScanAnalyzerOptions;
-import com.llw.study.R;
 import com.llw.study.basic.StudyActivity;
 import com.llw.study.databinding.ActivityHuaweiScanBinding;
 
+/**
+ * 华为扫码服务使用页面
+ * @author llw
+ */
 public class HuaweiScanActivity extends StudyActivity<ActivityHuaweiScanBinding> {
 
-    private static final String TAG = CameraActivity.class.getSimpleName();
+    private static final String TAG = CameraAlbumActivity.class.getSimpleName();
     private static final int REQUEST_CODE_SCAN = 100;
     private ActivityResultLauncher<String[]> resultLauncher;
 

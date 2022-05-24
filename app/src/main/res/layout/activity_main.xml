@@ -40,7 +40,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="12dp"
                 android:layout_marginEnd="12dp"
-                android:text="相机拍照"
+                android:text="相机拍照、相册选取"
                 android:textAllCaps="false" />
 
             <Button

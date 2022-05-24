@@ -41,7 +41,7 @@
             android:name=".activity.SmartRefreshActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.CameraActivity"
+            android:name=".activity.CameraAlbumActivity"
             android:exported="false" />
         <activity
             android:name=".activity.EasyPermissionActivity"

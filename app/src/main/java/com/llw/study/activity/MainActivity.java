@@ -20,8 +20,8 @@ public class MainActivity extends StudyActivity<ActivityMainBinding> {
     private void initView() {
         //进入EasyPermission使用页面
         binding.btnEasyPermissionUsed.setOnClickListener(v -> jumpActivity(EasyPermissionActivity.class));
-        //进入相机拍照使用页面
-        binding.btnTakePhotoUsed.setOnClickListener(v -> jumpActivity(CameraActivity.class));
+        //进入相机拍照、相册获取使用页面
+        binding.btnTakePhotoUsed.setOnClickListener(v -> jumpActivity(CameraAlbumActivity.class));
         //进入智能刷新使用页面
         binding.btnSmartRefreshUsed.setOnClickListener(v -> jumpActivity(SmartRefreshActivity.class));
         //进入百度定位地图使用页面
