@@ -2,15 +2,30 @@ package com.llw.study.activity;
 
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
+import androidx.core.content.FileProvider;
 
 import android.Manifest;
 import android.content.ContentValues;
+import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Environment;
 import android.provider.MediaStore;
+import android.text.TextUtils;
+import android.util.Log;
 
 import com.llw.study.basic.StudyActivity;
 import com.llw.study.databinding.ActivityCameraAlbumBinding;
+import com.llw.study.utils.BitmapUtil;
+import com.llw.study.utils.ImageUtil;
+
+import java.io.File;
+import java.io.IOException;
+
+import okhttp3.MediaType;
+import okhttp3.MultipartBody;
+import okhttp3.RequestBody;
 
 /**
  * 拍照页面
@@ -23,10 +38,12 @@ public class CameraAlbumActivity extends StudyActivity<ActivityCameraAlbumBindin
     private ActivityResultLauncher<String> requestCamera;
     private ActivityResultLauncher<String> requestReadStorage;
     private ActivityResultLauncher<Uri> cameraUriLauncher;
-    private ActivityResultLauncher<String> albumUriLauncher;
+    private ActivityResultLauncher<Intent> albumUriLauncher;
 
     //用于保存拍照图片的uri
     private Uri mCameraUri;
+
+    private ImageUtil imageUtil;
 
     @Override
     protected void onRegister() {
@@ -34,25 +51,40 @@ public class CameraAlbumActivity extends StudyActivity<ActivityCameraAlbumBindin
         //请求相机权限返回
         requestCamera = registerForActivityResult(new ActivityResultContracts.RequestPermission(), result -> {
             if (result) {
+                mCameraUri = imageUtil.createImageUri(this);
                 cameraUriLauncher.launch(mCameraUri);
             }
         });
         //请求文件读取权限返回
         requestReadStorage = registerForActivityResult(new ActivityResultContracts.RequestPermission(), result -> {
             if (result) {
-                albumUriLauncher.launch("image/*");
+                Intent intent = new Intent(Intent.ACTION_PICK);
+                intent.setType("image/*");
+                albumUriLauncher.launch(intent);
             }
         });
         //相机页面返回
         cameraUriLauncher = registerForActivityResult(new ActivityResultContracts.TakePicture(), result -> {
             if (result) {
-                binding.ivPicture.setImageURI(mCameraUri);
+                Bitmap bitmap = BitmapFactory.decodeFile(imageUtil.currentImagePath);
+                binding.ivPicture.setImageBitmap(bitmap);
+                binding.tvImgUrl.setText(imageUtil.currentImagePath);
+                String base64 = BitmapUtil.bitmapToBase64(bitmap);
+                Log.d(TAG, "base64: "+base64);
             }
         });
-        //相册选择返回
-        albumUriLauncher = registerForActivityResult(new ActivityResultContracts.GetContent(), result -> {
-            if (result != null) {
-                binding.ivPicture.setImageURI(result);
+        //图片选择返回
+        albumUriLauncher = registerForActivityResult(new ActivityResultContracts.StartActivityForResult(), result -> {
+            if (result.getResultCode() == RESULT_OK) {
+                Uri data = result.getData().getData();
+                String imagePath = imageUtil.getPath(this,data);
+                if(!TextUtils.isEmpty(imagePath)){
+                    Bitmap bitmap = BitmapFactory.decodeFile(imagePath);
+                    binding.ivPicture.setImageBitmap(bitmap);
+                    binding.tvImgUrl.setText(imagePath);
+                    String base64 = BitmapUtil.bitmapToBase64(bitmap);
+                    Log.d(TAG, "base64: "+base64);
+                }
             }
         });
     }
@@ -60,15 +92,14 @@ public class CameraAlbumActivity extends StudyActivity<ActivityCameraAlbumBindin
     @Override
     protected void onCreate() {
         back(binding.toolbar);
-
-        mCameraUri = getContentResolver().insert(Environment.getExternalStorageState().equals(Environment.MEDIA_MOUNTED) ?
-                MediaStore.Images.Media.EXTERNAL_CONTENT_URI : MediaStore.Images.Media.INTERNAL_CONTENT_URI, new ContentValues());
+        imageUtil = ImageUtil.getInstance();
 
         binding.btnTakePhoto.setOnClickListener(v -> {
             if (!hasPermission(Manifest.permission.CAMERA)) {
                 requestCamera.launch(Manifest.permission.CAMERA);
                 return;
             }
+            mCameraUri = imageUtil.createImageUri(this);
             //打开相机
             cameraUriLauncher.launch(mCameraUri);
         });
@@ -78,7 +109,9 @@ public class CameraAlbumActivity extends StudyActivity<ActivityCameraAlbumBindin
                 return;
             }
             //选择图片
-            albumUriLauncher.launch("image/*");
+            Intent intent = new Intent(Intent.ACTION_PICK);
+            intent.setType("image/*");
+            albumUriLauncher.launch(intent);
         });
 
     }

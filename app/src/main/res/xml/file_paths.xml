@@ -1,4 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <paths xmlns:android="http://schemas.android.com/apk/res/android">
-    <external-path name="external" path="."/>
+    <!--
+        external-path 用来指定Uri共享的,
+        name数据随便填写, path属性的值表示共享的具体路径
+        .表示把整个sd卡进行共享
+    -->
+    <cache-path name="name" path="path" />  <!--该方式提供在应用的内部存储区的缓存子目录的文件。它对应getCacheDir返回的路径：-->
+
+    <external-path name="name" path="path" />  <!--它对应Environment.getExternalStorageDirectory返回的路径：-->
+
+    <external-files-path name="name" path="path" /> <!--"/storage/emulated/0/Android/data/com.jph.simple/files"-->
+
+    <external-cache-path name="name" path="path" /> <!--Context.getExternalCacheDir()返回的路径。 eg:"/storage/emulated/0/Android/data/com.jph.simple/cache"。-->
+
+    <root-path path="" name="camera_photos" />
+
 </paths>
