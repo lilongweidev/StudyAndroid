@@ -18,6 +18,8 @@ public class MainActivity extends StudyActivity<ActivityMainBinding> {
     }
 
     private void initView() {
+        //进入RxPermissions使用页面
+        binding.btnRxPermissionUsed.setOnClickListener(v -> jumpActivity(RxPermissionActivity.class));
         //进入EasyPermission使用页面
         binding.btnEasyPermissionUsed.setOnClickListener(v -> jumpActivity(EasyPermissionActivity.class));
         //进入相机拍照、相册获取使用页面

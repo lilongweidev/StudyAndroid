@@ -13,7 +13,7 @@ import pub.devrel.easypermissions.EasyPermissions;
 /**
  * EasyPermission使用页面
  *
- * @author lonel
+ * @author llw
  */
 public class EasyPermissionActivity extends StudyActivity<ActivityEasyPermissionBinding> {
 
