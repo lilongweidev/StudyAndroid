@@ -70,16 +70,22 @@ dependencies {
     implementation 'com.squareup.okhttp3:logging-interceptor:3.10.0'
 
     //下拉刷新库
-    implementation  'io.github.scwang90:refresh-layout-kernel:2.0.5'      //核心必须依赖
-    implementation  'io.github.scwang90:refresh-header-classics:2.0.5'    //经典刷新头
-    implementation  'io.github.scwang90:refresh-header-radar:2.0.5'       //雷达刷新头
-    implementation  'io.github.scwang90:refresh-header-falsify:2.0.5'     //虚拟刷新头
-    implementation  'io.github.scwang90:refresh-header-material:2.0.5'    //谷歌刷新头
-    implementation  'io.github.scwang90:refresh-header-two-level:2.0.5'   //二级刷新头
-    implementation  'io.github.scwang90:refresh-footer-ball:2.0.5'        //球脉冲加载
-    implementation  'io.github.scwang90:refresh-footer-classics:2.0.5'    //经典加载
+    def refresh_version = "2.0.5"
+    implementation  "io.github.scwang90:refresh-layout-kernel:$refresh_version"      //核心必须依赖
+    implementation  "io.github.scwang90:refresh-header-classics:$refresh_version"    //经典刷新头
+    implementation  "io.github.scwang90:refresh-header-radar:$refresh_version"       //雷达刷新头
+    implementation  "io.github.scwang90:refresh-header-falsify:$refresh_version"     //虚拟刷新头
+    implementation  "io.github.scwang90:refresh-header-material:$refresh_version"    //谷歌刷新头
+    implementation  "io.github.scwang90:refresh-header-two-level:$refresh_version"   //二级刷新头
+    implementation  "io.github.scwang90:refresh-footer-ball:$refresh_version"        //球脉冲加载
+    implementation  "io.github.scwang90:refresh-footer-classics:$refresh_version"    //经典加载
     //Gson库
     implementation 'com.google.code.gson:gson:2.9.0'
     //华为扫码
     implementation 'com.huawei.hms:scanplus:2.5.0.300'
+    //AndroidPicker
+    def picker_version = "4.1.7"
+    implementation "com.github.gzu-liyujiang.AndroidPicker:Common:$picker_version"     //所有选择器的基础窗体
+    implementation "com.github.gzu-liyujiang.AndroidPicker:WheelView:$picker_version"  //滚轮选择器的滚轮控件
+    implementation "com.github.gzu-liyujiang.AndroidPicker:WheelPicker:$picker_version"//单项/数字、二三级联动、日期/时间等滚轮选择器
 }

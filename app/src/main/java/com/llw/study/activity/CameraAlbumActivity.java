@@ -11,6 +11,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Environment;
+import android.os.Handler;
 import android.provider.MediaStore;
 import android.text.TextUtils;
 import android.util.Log;
@@ -70,7 +71,13 @@ public class CameraAlbumActivity extends StudyActivity<ActivityCameraAlbumBindin
                 binding.ivPicture.setImageBitmap(bitmap);
                 binding.tvImgUrl.setText(imageUtil.currentImagePath);
                 String base64 = BitmapUtil.bitmapToBase64(bitmap);
-                Log.d(TAG, "base64: "+base64);
+                Log.d(TAG, "base64: data:image/jpeg;base64,"+base64);
+                new Handler().postDelayed(() -> {
+                    Bitmap testBitmap = BitmapUtil.base64ToBitmap(base64);
+                    binding.ivPicture.setImageBitmap(testBitmap);
+                    Log.d(TAG, "onRegister: 重新设置图片");
+
+                },2000);
             }
         });
         //图片选择返回

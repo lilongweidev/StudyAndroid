@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context=".activity.PickerActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        android:elevation="5dp"
+        app:navigationIcon="@drawable/ic_back"
+        app:title="AndroidPicker使用" />
+
+    <Button
+        android:layout_margin="12dp"
+        android:id="@+id/btn_option_bean"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="单项选择（JavaBean）"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:id="@+id/btn_sex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:text="性别选择"
+        android:textAllCaps="false" />
+</LinearLayout>

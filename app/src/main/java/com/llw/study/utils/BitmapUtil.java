@@ -5,6 +5,7 @@ import android.graphics.BitmapFactory;
 import android.util.Base64;
 
 import java.io.ByteArrayOutputStream;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.HttpURLConnection;
@@ -15,9 +16,10 @@ import java.net.URL;
  * Bitmap工具类
  */
 public class BitmapUtil {
+
+
     /**
      * bitmap转为base64
-     *
      * @param bitmap
      * @return
      */
@@ -53,7 +55,6 @@ public class BitmapUtil {
 
     /**
      * base64转为bitmap
-     *
      * @param base64Data
      * @return
      */

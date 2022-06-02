@@ -30,6 +30,12 @@ public class MainActivity extends StudyActivity<ActivityMainBinding> {
         binding.btnBaiduLocationMapUsed.setOnClickListener(v -> jumpActivity(BaiduMapActivity.class));
         //华为扫码服务使用页面
         binding.btnHuaweiScanUsed.setOnClickListener(v -> jumpActivity(HuaweiScanActivity.class));
+        //AndroidPicker使用页面
+        binding.btnPickerUsed.setOnClickListener(v -> jumpActivity(PickerActivity.class));
+        //ListView使用页面
+        binding.btnListViewUsed.setOnClickListener(v -> jumpActivity(ListViewActivity.class));
+        //RecyclerView使用页面
+        binding.btnRecyclerViewUsed.setOnClickListener(v -> jumpActivity(RecyclerViewActivity.class));
     }
 
     private long timeMillis;

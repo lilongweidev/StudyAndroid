@@ -18,7 +18,7 @@ import com.llw.study.databinding.ActivityHuaweiScanBinding;
  */
 public class HuaweiScanActivity extends StudyActivity<ActivityHuaweiScanBinding> {
 
-    private static final String TAG = CameraAlbumActivity.class.getSimpleName();
+    private static final String TAG = HuaweiScanActivity.class.getSimpleName();
     private static final int REQUEST_CODE_SCAN = 100;
     private ActivityResultLauncher<String[]> resultLauncher;
 

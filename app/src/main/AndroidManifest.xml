@@ -24,6 +24,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.StudyDemo">
         <activity
+            android:name=".activity.RecyclerViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ListViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.PickerActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.RxPermissionActivity"
             android:exported="false" />
         <activity
