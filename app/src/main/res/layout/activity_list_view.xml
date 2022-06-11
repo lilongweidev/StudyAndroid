@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
     android:background="@color/bg_color"
-    tools:context=".activity.ListViewActivity">
+    tools:context=".ui.activity.ListViewActivity">
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/toolbar"
         android:layout_width="match_parent"

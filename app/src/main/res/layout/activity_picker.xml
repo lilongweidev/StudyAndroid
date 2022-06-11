@@ -7,7 +7,7 @@
     android:background="@color/bg_color"
     android:orientation="vertical"
     android:fitsSystemWindows="true"
-    tools:context=".activity.PickerActivity">
+    tools:context=".ui.activity.PickerActivity">
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/toolbar"

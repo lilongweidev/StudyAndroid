@@ -1,4 +1,4 @@
-package com.llw.study.activity;
+package com.llw.study.ui.activity;
 
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;

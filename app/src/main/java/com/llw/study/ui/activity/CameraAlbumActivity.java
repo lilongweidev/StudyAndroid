@@ -1,18 +1,14 @@
-package com.llw.study.activity;
+package com.llw.study.ui.activity;
 
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
-import androidx.core.content.FileProvider;
 
 import android.Manifest;
-import android.content.ContentValues;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
-import android.os.Environment;
 import android.os.Handler;
-import android.provider.MediaStore;
 import android.text.TextUtils;
 import android.util.Log;
 
@@ -20,13 +16,6 @@ import com.llw.study.basic.StudyActivity;
 import com.llw.study.databinding.ActivityCameraAlbumBinding;
 import com.llw.study.utils.BitmapUtil;
 import com.llw.study.utils.ImageUtil;
-
-import java.io.File;
-import java.io.IOException;
-
-import okhttp3.MediaType;
-import okhttp3.MultipartBody;
-import okhttp3.RequestBody;
 
 /**
  * 拍照页面

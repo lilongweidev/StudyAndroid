@@ -3,26 +3,28 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/FirstFragment">
+    app:startDestination="@id/home_fragment">
 
     <fragment
-        android:id="@+id/FirstFragment"
-        android:name="com.llw.study.activity.FirstFragment"
-        android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first">
+        android:id="@+id/home_fragment"
+        android:name="com.llw.study.ui.fragment.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/fragment_home" />
 
-        <action
-            android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
-    </fragment>
     <fragment
-        android:id="@+id/SecondFragment"
-        android:name="com.llw.study.activity.SecondFragment"
-        android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second">
+        android:id="@+id/list_fragment"
+        android:name="com.llw.study.ui.fragment.ListFragment"
+        android:label="ListFragment"
+        tools:layout="@layout/fragment_list" />
 
-        <action
-            android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
-    </fragment>
+    <fragment
+        android:id="@+id/msg_fragment"
+        android:name="com.llw.study.ui.fragment.MsgFragment"
+        android:label="MsgFragment"
+        tools:layout="@layout/fragment_msg" />
+    <fragment
+        android:id="@+id/my_fragment"
+        android:name="com.llw.study.ui.fragment.MyFragment"
+        android:label="MyFragment"
+        tools:layout="@layout/fragment_my" />
 </navigation>

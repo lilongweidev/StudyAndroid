@@ -1,9 +1,10 @@
-package com.llw.study.activity;
+package com.llw.study.ui.activity;
 
 import android.view.KeyEvent;
 
 import com.llw.study.basic.StudyActivity;
 import com.llw.study.databinding.ActivityMainBinding;
+
 
 /**
  * 主页面
@@ -36,6 +37,8 @@ public class MainActivity extends StudyActivity<ActivityMainBinding> {
         binding.btnListViewUsed.setOnClickListener(v -> jumpActivity(ListViewActivity.class));
         //RecyclerView使用页面
         binding.btnRecyclerViewUsed.setOnClickListener(v -> jumpActivity(RecyclerViewActivity.class));
+        //Navigation使用页面
+        binding.btnNavigationUsed.setOnClickListener(v -> jumpActivity(NavigationActivity.class));
     }
 
     private long timeMillis;

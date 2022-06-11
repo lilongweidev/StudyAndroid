@@ -1,4 +1,4 @@
-package com.llw.study.activity;
+package com.llw.study.ui.activity;
 
 import android.view.View;
 

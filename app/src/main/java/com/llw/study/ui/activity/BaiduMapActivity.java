@@ -1,4 +1,4 @@
-package com.llw.study.activity;
+package com.llw.study.ui.activity;
 
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
@@ -22,7 +22,6 @@ import com.baidu.mapapi.search.geocode.GeoCoder;
 import com.baidu.mapapi.search.geocode.OnGetGeoCoderResultListener;
 import com.baidu.mapapi.search.geocode.ReverseGeoCodeOption;
 import com.baidu.mapapi.search.geocode.ReverseGeoCodeResult;
-import com.google.gson.Gson;
 import com.llw.study.basic.StudyActivity;
 import com.llw.study.databinding.ActivityBaiduMapBinding;
 

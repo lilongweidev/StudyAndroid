@@ -52,6 +52,8 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
     implementation 'androidx.navigation:navigation-fragment:2.3.5'
     implementation 'androidx.navigation:navigation-ui:2.3.5'
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.3.1'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
@@ -88,4 +90,8 @@ dependencies {
     implementation "com.github.gzu-liyujiang.AndroidPicker:Common:$picker_version"     //所有选择器的基础窗体
     implementation "com.github.gzu-liyujiang.AndroidPicker:WheelView:$picker_version"  //滚轮选择器的滚轮控件
     implementation "com.github.gzu-liyujiang.AndroidPicker:WheelPicker:$picker_version"//单项/数字、二三级联动、日期/时间等滚轮选择器
+    //Navigation
+    def nav_version = "2.3.2"
+    implementation "androidx.navigation:navigation-fragment:$nav_version"
+    implementation "androidx.navigation:navigation-ui:$nav_version"
 }

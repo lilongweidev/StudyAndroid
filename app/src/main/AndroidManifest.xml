@@ -24,19 +24,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.StudyDemo">
         <activity
-            android:name=".activity.RecyclerViewActivity"
+            android:name=".ui.activity.NavigationActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.ListViewActivity"
+            android:name=".ui.activity.RecyclerViewActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.PickerActivity"
+            android:name=".ui.activity.ListViewActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.RxPermissionActivity"
+            android:name=".ui.activity.PickerActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.SplashActivity"
+            android:name=".ui.activity.RxPermissionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.activity.SplashActivity"
             android:exported="true"
             android:theme="@style/SplashTheme">
             <intent-filter>
@@ -46,23 +49,23 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activity.HuaweiScanActivity"
+            android:name=".ui.activity.HuaweiScanActivity"
             android:exported="false" /> <!-- 添加华为扫码页面 -->
         <activity android:name="com.huawei.hms.hmsscankit.ScanKitActivity" />
         <activity
-            android:name=".activity.BaiduMapActivity"
+            android:name=".ui.activity.BaiduMapActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.SmartRefreshActivity"
+            android:name=".ui.activity.SmartRefreshActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.CameraAlbumActivity"
+            android:name=".ui.activity.CameraAlbumActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.EasyPermissionActivity"
+            android:name=".ui.activity.EasyPermissionActivity"
             android:exported="false" />
         <activity
-            android:name=".activity.MainActivity"
+            android:name=".ui.activity.MainActivity"
             android:exported="false" />
 
         <provider

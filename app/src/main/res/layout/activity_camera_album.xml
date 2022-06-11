@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/bg_color"
     android:fitsSystemWindows="true"
-    tools:context=".activity.CameraAlbumActivity">
+    tools:context=".ui.activity.CameraAlbumActivity">
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/toolbar"

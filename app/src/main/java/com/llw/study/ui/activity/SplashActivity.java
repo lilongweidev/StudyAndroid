@@ -1,11 +1,7 @@
-package com.llw.study.activity;
+package com.llw.study.ui.activity;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.os.Bundle;
 import android.os.Handler;
 
-import com.llw.study.R;
 import com.llw.study.basic.StudyActivity;
 import com.llw.study.databinding.ActivitySplashBinding;
 

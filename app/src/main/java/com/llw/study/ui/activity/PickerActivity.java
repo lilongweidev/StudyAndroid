@@ -1,8 +1,4 @@
-package com.llw.study.activity;
-
-import android.widget.Toast;
-
-import androidx.core.content.ContextCompat;
+package com.llw.study.ui.activity;
 
 import com.github.gzuliyujiang.wheelpicker.OptionPicker;
 import com.github.gzuliyujiang.wheelpicker.SexPicker;
@@ -10,7 +6,6 @@ import com.github.gzuliyujiang.wheelpicker.contract.OnOptionPickedListener;
 import com.github.gzuliyujiang.wheelpicker.contract.OnOptionSelectedListener;
 import com.github.gzuliyujiang.wheelpicker.widget.OptionWheelLayout;
 import com.github.gzuliyujiang.wheelview.annotation.CurtainCorner;
-import com.llw.study.R;
 import com.llw.study.basic.StudyActivity;
 import com.llw.study.bean.BookBean;
 import com.llw.study.databinding.ActivityPickerBinding;
@@ -34,7 +29,6 @@ public class PickerActivity extends StudyActivity<ActivityPickerBinding> impleme
             data.add(new BookBean(3, "《西游记》"));
             data.add(new BookBean(4, "《红楼梦》"));
             OptionPicker picker = new OptionPicker(this);
-            picker.setTitle("货物分类");
             picker.setBodyWidth(280);
             picker.setData(data);
             picker.setDefaultPosition(2);

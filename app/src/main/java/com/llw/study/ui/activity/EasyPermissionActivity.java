@@ -1,9 +1,7 @@
-package com.llw.study.activity;
+package com.llw.study.ui.activity;
 
 import android.Manifest;
-import android.os.Bundle;
 
-import com.llw.study.R;
 import com.llw.study.basic.StudyActivity;
 import com.llw.study.databinding.ActivityEasyPermissionBinding;
 

@@ -10,7 +10,12 @@
         <entry key="..\:/AndroidStudioProjects/StudyDemo/app/src/main/res/layout/activity_easy_permission.xml" value="0.19895833333333332" />
         <entry key="..\:/AndroidStudioProjects/StudyDemo/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/AndroidStudioProjects/StudyDemo/app/src/main/res/layout/activity_smart_refresh.xml" value="0.17592592592592593" />
+        <entry key="..\:/Program Files/AndroidStudioProjects/StudyAndroid/app/src/main/res/drawable/baseline_person_black_24dp.xml" value="0.1375" />
         <entry key="..\:/Program Files/AndroidStudioProjects/StudyAndroid/app/src/main/res/drawable/ic_back.xml" value="0.1715" />
+        <entry key="..\:/Program Files/AndroidStudioProjects/StudyAndroid/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.1715" />
+        <entry key="..\:/Program Files/AndroidStudioProjects/StudyAndroid/app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.1715" />
+        <entry key="..\:/Program Files/AndroidStudioProjects/StudyAndroid/app/src/main/res/drawable/ic_person_black_24dp.xml" value="0.135" />
+        <entry key="..\:/Program Files/AndroidStudioProjects/StudyAndroid/app/src/main/res/drawable/menu_item_selected.xml" value="0.1375" />
         <entry key="..\:/Program Files/AndroidStudioProjects/StudyAndroid/app/src/main/res/drawable/splash_bg.xml" value="0.131" />
         <entry key="..\:/Program Files/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/activity_baidu_map.xml" value="0.14130434782608695" />
         <entry key="..\:/Program Files/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/activity_camera.xml" value="0.1625" />
@@ -18,13 +23,19 @@
         <entry key="..\:/Program Files/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/activity_easy_permission.xml" value="0.16666666666666666" />
         <entry key="..\:/Program Files/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/activity_huawei_scan.xml" value="0.16666666666666666" />
         <entry key="..\:/Program Files/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/activity_list_view.xml" value="0.14666666666666667" />
-        <entry key="..\:/Program Files/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/activity_main.xml" value="0.3333333333333333" />
+        <entry key="..\:/Program Files/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Program Files/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/activity_navigation.xml" value="0.1" />
         <entry key="..\:/Program Files/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/activity_picker.xml" value="0.16666666666666666" />
         <entry key="..\:/Program Files/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/activity_recycler_view.xml" value="0.1" />
         <entry key="..\:/Program Files/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/activity_rx_permission.xml" value="0.11503623188405797" />
         <entry key="..\:/Program Files/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/activity_smart_refresh.xml" value="0.1585144927536232" />
         <entry key="..\:/Program Files/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/activity_splash.xml" value="0.1625" />
+        <entry key="..\:/Program Files/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/fragment_home.xml" value="0.16666666666666666" />
+        <entry key="..\:/Program Files/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/fragment_list.xml" value="0.1" />
+        <entry key="..\:/Program Files/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/fragment_msg.xml" value="0.1" />
+        <entry key="..\:/Program Files/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/fragment_my.xml" value="0.1" />
         <entry key="..\:/Program Files/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/item_study_rv_list.xml" value="0.22" />
+        <entry key="..\:/Program Files/AndroidStudioProjects/StudyAndroid/app/src/main/res/menu/bottom_nav_menu.xml" value="0.11944444444444445" />
       </map>
     </option>
   </component>

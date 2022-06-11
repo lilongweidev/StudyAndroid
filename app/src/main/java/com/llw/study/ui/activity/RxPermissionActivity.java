@@ -1,9 +1,6 @@
-package com.llw.study.activity;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.llw.study.ui.activity;
 
 import android.Manifest;
-import android.os.Bundle;
 
 import com.llw.study.basic.StudyActivity;
 import com.llw.study.databinding.ActivityRxPermissionBinding;

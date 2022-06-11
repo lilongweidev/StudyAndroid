@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/bg_color"
     android:fitsSystemWindows="true"
-    tools:context=".activity.HuaweiScanActivity">
+    tools:context=".ui.activity.HuaweiScanActivity">
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/toolbar"
