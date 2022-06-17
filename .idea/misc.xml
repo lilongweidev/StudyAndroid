@@ -23,17 +23,20 @@
         <entry key="..\:/Program Files/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/activity_easy_permission.xml" value="0.16666666666666666" />
         <entry key="..\:/Program Files/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/activity_huawei_scan.xml" value="0.16666666666666666" />
         <entry key="..\:/Program Files/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/activity_list_view.xml" value="0.14666666666666667" />
-        <entry key="..\:/Program Files/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Program Files/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/activity_main.xml" value="0.16666666666666666" />
         <entry key="..\:/Program Files/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/activity_navigation.xml" value="0.1" />
+        <entry key="..\:/Program Files/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/activity_network.xml" value="0.16666666666666666" />
         <entry key="..\:/Program Files/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/activity_picker.xml" value="0.16666666666666666" />
         <entry key="..\:/Program Files/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/activity_recycler_view.xml" value="0.1" />
         <entry key="..\:/Program Files/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/activity_rx_permission.xml" value="0.11503623188405797" />
         <entry key="..\:/Program Files/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/activity_smart_refresh.xml" value="0.1585144927536232" />
         <entry key="..\:/Program Files/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/activity_splash.xml" value="0.1625" />
+        <entry key="..\:/Program Files/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/activity_xunfei_speech.xml" value="0.22" />
         <entry key="..\:/Program Files/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/fragment_home.xml" value="0.16666666666666666" />
         <entry key="..\:/Program Files/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/fragment_list.xml" value="0.1" />
         <entry key="..\:/Program Files/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/fragment_msg.xml" value="0.1" />
         <entry key="..\:/Program Files/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/fragment_my.xml" value="0.1" />
+        <entry key="..\:/Program Files/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/ifly_layout_mnotice_image.xml" value="0.1" />
         <entry key="..\:/Program Files/AndroidStudioProjects/StudyAndroid/app/src/main/res/layout/item_study_rv_list.xml" value="0.22" />
         <entry key="..\:/Program Files/AndroidStudioProjects/StudyAndroid/app/src/main/res/menu/bottom_nav_menu.xml" value="0.11944444444444445" />
       </map>

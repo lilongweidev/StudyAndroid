@@ -7,6 +7,8 @@ import android.content.Context;
 import com.baidu.mapapi.CoordType;
 import com.baidu.mapapi.SDKInitializer;
 import com.baidu.mapapi.common.BaiduMapSDKException;
+import com.iflytek.cloud.SpeechConstant;
+import com.iflytek.cloud.SpeechUtility;
 
 /**
  * 自定义App
@@ -24,6 +26,7 @@ public class StudyApp extends Application {
         super.onCreate();
         context = getApplicationContext();
         initBaiduSDK();
+        SpeechUtility.createUtility(context, SpeechConstant.APPID +"=1071f8ae");
     }
 
     /**
