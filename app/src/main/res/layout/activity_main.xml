@@ -91,6 +91,15 @@
                 android:textAllCaps="false" />
 
             <Button
+                android:id="@+id/btn_xunfei_speech_synthesis_used"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:text="科大讯飞语音合成（在线）"
+                android:textAllCaps="false" />
+
+            <Button
                 android:id="@+id/btn_picker_used"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

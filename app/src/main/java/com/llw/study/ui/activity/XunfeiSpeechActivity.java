@@ -33,7 +33,7 @@ import java.util.LinkedHashMap;
 public class XunfeiSpeechActivity extends StudyActivity<ActivityXunfeiSpeechBinding> {
 
 
-    private static final String TAG = "MainActivity";
+    private static final String TAG = XunfeiSpeechActivity.class.getSimpleName();
 
     private SpeechRecognizer mIat;// 语音听写对象
     private RecognizerDialog mIatDialog;// 语音听写UI

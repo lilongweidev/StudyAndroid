@@ -9,6 +9,7 @@ import com.baidu.mapapi.SDKInitializer;
 import com.baidu.mapapi.common.BaiduMapSDKException;
 import com.iflytek.cloud.SpeechConstant;
 import com.iflytek.cloud.SpeechUtility;
+import com.llw.study.network.NetworkApi;
 
 /**
  * 自定义App
@@ -25,8 +26,12 @@ public class StudyApp extends Application {
     public void onCreate() {
         super.onCreate();
         context = getApplicationContext();
+        //初始化百度地图
         initBaiduSDK();
+        //初始化讯飞
         SpeechUtility.createUtility(context, SpeechConstant.APPID +"=1071f8ae");
+        //初始化网络框架
+        NetworkApi.init(new NetworkRequiredInfo(this));
     }
 
     /**

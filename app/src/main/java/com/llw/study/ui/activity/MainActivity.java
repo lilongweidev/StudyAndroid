@@ -33,6 +33,8 @@ public class MainActivity extends StudyActivity<ActivityMainBinding> {
         binding.btnHuaweiScanUsed.setOnClickListener(v -> jumpActivity(HuaweiScanActivity.class));
         //科大讯飞语音识别使用页面
         binding.btnXunfeiSpeechRecognitionUsed.setOnClickListener(v -> jumpActivity(XunfeiSpeechActivity.class));
+        //科大讯飞语音合成（在线）使用页面
+        binding.btnXunfeiSpeechSynthesisUsed.setOnClickListener(v -> jumpActivity(XunfeiSpeechSynthesisActivity.class));
         //AndroidPicker使用页面
         binding.btnPickerUsed.setOnClickListener(v -> jumpActivity(PickerActivity.class));
         //ListView使用页面

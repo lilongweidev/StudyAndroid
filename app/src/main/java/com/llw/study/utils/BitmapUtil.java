@@ -57,6 +57,12 @@ public class BitmapUtil {
         return result;
     }
 
+    public static String bitmapToBase(Bitmap bitmap) {
+        ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+        bitmap.compress(Bitmap.CompressFormat.JPEG, 10, outputStream);
+        return Base64.encodeToString(outputStream.toByteArray(), Base64.DEFAULT);
+    }
+
     public static String convertFileToBase64(String imgPath) {
         byte[] data = null;
         // 读取图片字节数组
