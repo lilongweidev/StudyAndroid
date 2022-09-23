@@ -11,6 +11,8 @@
 * SmartRefreshLayout使用
 * 百度定位、地图使用
 * 华为扫描二维码使用
+* 科大讯飞语音识别、语音合成（在线）
 * AndroidPicker使用
 * ListView使用
 * RecyclerView使用
+* Navigation使用
